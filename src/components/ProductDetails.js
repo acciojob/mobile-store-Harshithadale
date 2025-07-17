@@ -15,7 +15,9 @@ function ProductDetails({mobiles}) {
       <img src={product.image} alt={product.name} width={200} />
       <p>{product.description}</p>
       <p><strong>Price:</strong> ₹{product.price}</p>
-      <Link to = "/"><button>Other Products</button></Link>
+       <Link to="/">
+        <button className="btn">Other Products</button>
+      </Link>
     </div>
   );
 }

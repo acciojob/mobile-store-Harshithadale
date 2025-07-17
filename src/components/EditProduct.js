@@ -52,8 +52,8 @@ function EditProduct({setMobiles}) {
         <br/>
         <img src={formData.image} alt="Current Image" width="70"/>
       <input type="file" id="imageInput" accept="image/*" onChange={handleImageChange}/><br/><br/>
-      <button type="submit" onClick={handleSubmit}>Save</button>
-      <button type="submit" onClick={handleDelete}>Delete</button>
+      <button type="submit" onClick={handleSubmit} className="edit-btn float-right">Save</button>
+      <button type="submit" onClick={handleDelete} className="delete-btn float-right">Delete</button>
       </form>
     </div>
   );

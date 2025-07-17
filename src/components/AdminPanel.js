@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function AdminPanel({mobiles}) {
   return (
     <>
-    <Link to="/add"><button>Add Product</button></Link>
+    <Link to="/admin/add"><button>Add Product</button></Link>
     <div>{mobiles.map((item,ind)=>(
         <div>
            <Link to={`/admin/products/${item.id}`}><img src={item.image} width="80" height="80"/></Link>
